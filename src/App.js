@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Header } from "./components/layout/Header";
+import { Sidebar } from "./components/layout/Sidebar";
+// import { Content } from "./components/layout/Content";
+import logo from "./logo.svg";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export const App = () => (
+  <div className="App">
+    ITAKA - CRM, raporty
+    <div>
+      <Header />
+      <Sidebar />
     </div>
-  );
-}
-
-export default App;
+  </div>
+);
